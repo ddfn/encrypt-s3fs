@@ -9,5 +9,9 @@ The purpose of the project is to create a stackable file system on Linux using A
 
 -Any updates will be reflected on both the local directory and the corresponding s3 bucket.
 
+-A stand-alone rc4, fully compatible with "openssl rc4", with both nosalt and salt options, 
+i.e., any files encrypted by the stand-alone rc4 should be able to be decrypted by 
+"openssl rc4", and vice versa;
+
 -All files in the file system are automatically encrypted using rc4 with salt, 
 and applications can transparently operate on the files without explicit decryptions.
